@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'highchart',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'highchart', null ]
+6 verbose cache add name=undefined spec="highchart" args=["highchart",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'highchart',
+7 verbose parsed url   path: 'highchart',
+7 verbose parsed url   href: 'highchart' }
+8 silly lockFile 767a8d46-highchart highchart
+9 verbose lock highchart /home/i2x/.npm/767a8d46-highchart.lock
+10 silly lockFile 767a8d46-highchart highchart
+11 silly lockFile 767a8d46-highchart highchart
+12 verbose addNamed [ 'highchart', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile b4bdaf3d-highchart highchart@
+15 verbose lock highchart@ /home/i2x/.npm/b4bdaf3d-highchart.lock
+16 silly addNameRange { name: 'highchart', range: '*', hasData: false }
+17 verbose url raw highchart
+18 verbose url resolving [ 'https://registry.npmjs.org/', './highchart' ]
+19 verbose url resolved https://registry.npmjs.org/highchart
+20 info trying registry request attempt 1 at 16:46:59
+21 http GET https://registry.npmjs.org/highchart
+22 http 404 https://registry.npmjs.org/highchart
+23 silly registry.get cb [ 404,
+23 silly registry.get   { 'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=0',
+23 silly registry.get     'content-length': '2',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Sun, 23 Aug 2015 09:47:00 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-sin6921-SIN',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1440323220.482016,VS0,VE229' } ]
+24 silly addNameRange number 2 { name: 'highchart', range: '*', hasData: true }
+25 silly addNameRange versions [ undefined, [] ]
+26 error TypeError: Cannot read property 'latest' of undefined
+26 error     at next (/usr/share/npm/lib/cache.js:687:35)
+26 error     at /usr/share/npm/lib/cache.js:675:5
+26 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+26 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+26 error     at Object.oncomplete (fs.js:107:15)
+27 error If you need help, you may report this log at:
+27 error     <http://github.com/isaacs/npm/issues>
+27 error or email it to:
+27 error     <npm-@googlegroups.com>
+28 error System Linux 3.19.0-26-generic
+29 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "highchart" "--save"
+30 error cwd /var/www/html/node
+31 error node -v v0.10.25
+32 error npm -v 1.3.10
+33 error type non_object_property_load
+34 verbose exit [ 1, true ]
